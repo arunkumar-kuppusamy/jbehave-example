@@ -3,24 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.jbehave</groupId>
-                <artifactId>jbehave-maven-plugin</artifactId>
-                <version>${jbehave.version}</version>
-                <executions>
-                    <execution>
-                        <id>unpack-view-resources</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>unpack-view-resources</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 
     <parent>
         <groupId>net.starjuice</groupId>
@@ -53,7 +35,7 @@
         <dependency>
             <groupId>org.jbehave.site</groupId>
             <artifactId>jbehave-site-resources</artifactId>
-            <version>3.1.1</version>
+            <version>${jbehave.site_resources.version}</version>
             <type>zip</type>
         </dependency>
 
@@ -66,5 +48,14 @@
         </dependency>
 
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jbehave</groupId>
+                <artifactId>jbehave-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
