@@ -20,8 +20,13 @@ public class ApiTestProvider implements ImperativeTestProvider {
     }
 
     @Override
-    public void make_calculator_add_two_numbers(int a, int b) {
+    public void make_calculator_add(int a, int b) {
         actual = calculator.add(a, b);
+    }
+
+    @Override
+    public void make_calculator_subtract(int minuend, int subtrahend) {
+        actual = calculator.subtract(minuend, subtrahend);
     }
 
     @Override

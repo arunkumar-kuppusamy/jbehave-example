@@ -15,10 +15,17 @@ public class CrazyImplementationTest implements ImperativeTestProvider {
     }
 
     @Override
-    public void make_calculator_add_two_numbers(int a, int b) {
+    public void make_calculator_add(int a, int b) {
         calculator.number(a);
         calculator.plus();
         calculator.number(b);
+    }
+
+    @Override
+    public void make_calculator_subtract(int minuend, int subtrahend) {
+        calculator.number(minuend);
+        calculator.minus();
+        calculator.number(subtrahend);
     }
 
     @Override

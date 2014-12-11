@@ -10,7 +10,11 @@ public class StubTestProvider implements ImperativeTestProvider {
     }
 
     @Override
-    public void make_calculator_add_two_numbers(int a, int b) {
+    public void make_calculator_add(int a, int b) {
+    }
+
+    @Override
+    public void make_calculator_subtract(int minuend, int subtrahend) {
     }
 
     @Override

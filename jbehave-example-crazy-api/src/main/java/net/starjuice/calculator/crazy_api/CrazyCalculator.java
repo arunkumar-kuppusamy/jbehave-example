@@ -9,17 +9,24 @@ public class CrazyCalculator {
         op = null;
     }
 
-    public void number(int a) {
+    public void number(int i) {
         if ("plus".equals(op)) {
-            value += a;
+            value += i;
+            op = null;
+        } else if ("minus".equals(op)) {
+            value -= i;
             op = null;
         } else {
-            value = a;
+            value = i;
         }
     }
 
     public void plus() {
         op = "plus";
+    }
+
+    public void minus() {
+        op = "minus";
     }
 
     public int equal() {
