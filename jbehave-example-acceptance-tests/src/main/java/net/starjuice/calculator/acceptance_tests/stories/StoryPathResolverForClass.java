@@ -13,13 +13,11 @@ class StoryPathResolverForClass extends UnderscoredCamelCaseResolver {
 
     @Override
     protected String resolveName(Class<? extends Embeddable> ignored) {
-        System.err.println("DEBUG: resolving story name with " + embeddableClass.getCanonicalName());
         return super.resolveName(embeddableClass);
     }
 
     @Override
     protected String resolveDirectory(Class<? extends Embeddable> ignored) {
-        System.err.println("DEBUG: resolving story directory with " + embeddableClass.getCanonicalName());
         return super.resolveDirectory(embeddableClass);
     }
 }
