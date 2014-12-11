@@ -11,8 +11,8 @@
 
     <modules>
         <module>jbehave-example-acceptance-tests</module>
-        <module>jbehave-example-stub</module>
         <module>jbehave-example-api</module>
+        <module>jbehave-example-crazy-api</module>
     </modules>
 
     <properties>

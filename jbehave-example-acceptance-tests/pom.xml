@@ -6,19 +6,6 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.17</version>
-                <configuration>
-                    <testSourceDirectory>${basedir}/src/main/java/</testSourceDirectory>
-                    <testClassesDirectory>${project.build.directory}/classes/</testClassesDirectory>
-                    <includes>
-                        <include>net/starjuice/calculator/acceptance_tests/stories/**/*.java</include>
-                    </includes>
-                </configuration>
-            </plugin>
-
-            <plugin>
                 <groupId>org.jbehave</groupId>
                 <artifactId>jbehave-maven-plugin</artifactId>
                 <version>${jbehave.version}</version>
