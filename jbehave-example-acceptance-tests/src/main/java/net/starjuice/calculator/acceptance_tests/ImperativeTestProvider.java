@@ -5,5 +5,5 @@ public interface ImperativeTestProvider {
 
     void make_calculator_add_two_numbers(int a, int b);
 
-    void check_calculator_answer(int answer) throws Throwable;
+    void check_calculator_answer(int answer);
 }

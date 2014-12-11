@@ -1,4 +1,4 @@
-package net.starjuice.calculator.acceptance_tests.annotations;
+package net.starjuice.calculator.acceptance_tests.steps;
 
 import org.springframework.stereotype.Component;
 

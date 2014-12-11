@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 public class ReferenceCalculator implements Calculator {
 
     public int add(int a, int b) {
-        return a + b + 1;
+        return a + b;
     }
 }

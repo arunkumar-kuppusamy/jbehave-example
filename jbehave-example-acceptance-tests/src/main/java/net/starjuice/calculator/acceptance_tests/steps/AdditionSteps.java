@@ -1,7 +1,6 @@
 package net.starjuice.calculator.acceptance_tests.steps;
 
 import net.starjuice.calculator.acceptance_tests.ImperativeTestProvider;
-import net.starjuice.calculator.acceptance_tests.annotations.Steps;
 import org.jbehave.core.annotations.When;
 import org.springframework.beans.factory.annotation.Autowired;
 

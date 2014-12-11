@@ -1,4 +1,4 @@
-package net.starjuice.calculator.acceptance_tests.annotations;
+package net.starjuice.calculator.acceptance_tests;
 
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.test.annotation.DirtiesContext;
@@ -9,7 +9,6 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import net.starjuice.calculator.acceptance_tests.AcceptanceTestsConfiguration;
 
 @ContextConfiguration(classes = AcceptanceTestsConfiguration.class)
 @ImportResource({"classpath:/application.properties", "classpath:/tests.properties"})

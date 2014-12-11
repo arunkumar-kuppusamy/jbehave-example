@@ -51,7 +51,7 @@ public abstract class AbstractSpringJBehaveStory extends JUnitStory {
                 .useParameterControls(parameterControls());
     }
 
-    private StoryPathResolver storyPathResolver() {
+    StoryPathResolver storyPathResolver() {
         return new UnderscoredCamelCaseResolver();
     }
 
