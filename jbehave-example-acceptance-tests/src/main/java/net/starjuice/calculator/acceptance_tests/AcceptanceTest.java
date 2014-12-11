@@ -11,7 +11,6 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @ContextConfiguration(classes = AcceptanceTestsConfiguration.class)
-@ImportResource({"classpath:/application.properties", "classpath:/tests.properties"})
 @ActiveProfiles("tests")
 @DirtiesContext
 @Target(ElementType.TYPE)

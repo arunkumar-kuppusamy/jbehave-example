@@ -4,20 +4,19 @@ import net.starjuice.calculator.acceptance_tests.ImperativeTestProvider;
 import net.starjuice.calculator.api.Calculator;
 import net.starjuice.calculator.api.ReferenceCalculator;
 import org.junit.Assert;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+@TestProvider
 public class ApiTestProvider implements ImperativeTestProvider {
 
-    // TODO ApiTestProvider needs a @Configuration that sets @ComponentScan basePackages for @Autowired to work
-    //@Autowired
+    @Autowired
     private Calculator calculator;
 
     private int actual;
 
     @Override
     public void make_a_calculator() {
-        calculator = new ReferenceCalculator();
     }
 
     @Override

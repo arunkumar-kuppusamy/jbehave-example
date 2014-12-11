@@ -1,8 +1,6 @@
 package net.starjuice.calculator.api;
 
-import org.springframework.stereotype.Component;
-
-@Component
+@DomainComponent
 public class ReferenceCalculator implements Calculator {
 
     public int add(int a, int b) {
